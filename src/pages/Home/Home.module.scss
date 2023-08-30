@@ -1,0 +1,123 @@
+@use "src/utils/styles/mediaQuery" as media;
+
+.template {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  width: 100%;
+  
+  background-color: #000000;
+  color: #ffffff;
+
+  &__container {
+    width: 100%;
+  }
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  background-color: rgba(0,0,0,50%);
+  background-image: url('https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMzA4MTZfMjY0%2FMDAxNjkyMTgzMTU3OTk2.yudttU2pOFwzPS7lGKCXy34wrFfaXskZFxePiYblVW4g.Ax0zhD1HY5eojVccOrCU19jZyYHtxVZLuf15coGLWD4g.JPEG%2F3A872DA0-E5C2-45CC-BE99-4DACEAC1430E.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__logo {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    width: 350px;
+  }
+  
+  &__cover {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,50%);
+  }
+
+  &__main {
+    font-size: 64px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    white-space: pre-wrap;
+    margin-bottom: 30px;
+  }
+
+  &__sub {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    white-space: pre-wrap;
+  }
+}
+
+.introduce {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__phrase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--main {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    &--sub {
+      font-size: 24px;
+      text-align: center;
+      white-space: pre-wrap;
+      line-height: 36px;
+    }
+  }
+}
+
+.sideMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #000000;
+    border-radius: 100px;
+  }
+}
