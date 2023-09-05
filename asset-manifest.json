@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/haeduk_clinic.io/static/css/main.dea7aa47.css",
-    "main.js": "/haeduk_clinic.io/static/js/main.a90db1b3.js",
+    "main.css": "/haeduk_clinic.io/static/css/main.1e498c37.css",
+    "main.js": "/haeduk_clinic.io/static/js/main.37249cd7.js",
     "static/js/787.8f51dbdf.chunk.js": "/haeduk_clinic.io/static/js/787.8f51dbdf.chunk.js",
     "static/media/main.jpg": "/haeduk_clinic.io/static/media/main.5c8c568f97f5ec8a1c0c.jpg",
     "static/media/yeji.png": "/haeduk_clinic.io/static/media/yeji.7f831b16f261225c84c1.png",
@@ -16,12 +16,12 @@
     "static/media/reservation.svg": "/haeduk_clinic.io/static/media/reservation.1dbcaf318be44a7e2a3cf37f27f5703c.svg",
     "static/media/location.svg": "/haeduk_clinic.io/static/media/location.e3c95818dbbc710336c325be62cec027.svg",
     "index.html": "/haeduk_clinic.io/index.html",
-    "main.dea7aa47.css.map": "/haeduk_clinic.io/static/css/main.dea7aa47.css.map",
-    "main.a90db1b3.js.map": "/haeduk_clinic.io/static/js/main.a90db1b3.js.map",
+    "main.1e498c37.css.map": "/haeduk_clinic.io/static/css/main.1e498c37.css.map",
+    "main.37249cd7.js.map": "/haeduk_clinic.io/static/js/main.37249cd7.js.map",
     "787.8f51dbdf.chunk.js.map": "/haeduk_clinic.io/static/js/787.8f51dbdf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dea7aa47.css",
-    "static/js/main.a90db1b3.js"
+    "static/css/main.1e498c37.css",
+    "static/js/main.37249cd7.js"
   ]
 }
