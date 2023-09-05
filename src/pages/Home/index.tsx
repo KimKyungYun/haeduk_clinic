@@ -1,16 +1,24 @@
 import { ReactComponent as Call } from 'assets/svg/call.svg';
 import { ReactComponent as Location } from 'assets/svg/location.svg';
 import { ReactComponent as Reservation } from 'assets/svg/reservation.svg';
-// import { ReactComponent as Test } from 'assets/svg/test2.svg';
 import LogoRow from 'assets/image/logo_row_gold_white.png';
+import LogoRowMobile from 'assets/image/logo_row_gold.png';
+import Yeji from 'assets/image/doctor/yeji.png';
+import Dahee from 'assets/image/doctor/dahi.png';
+import Hyein from 'assets/image/doctor/hyein.png';
+import useMediaQuery from 'utils/hooks/useMediaQuery';
 import styles from './Home.module.scss';
 
 export default function Home() {
+  const { isMobile } = useMediaQuery();
   return (
     <div className={styles.template}>
       <div className={styles.content}>
         <div className={styles.banner}>
-          <img className={styles.banner__logo} src={LogoRow} alt="" />
+          <div className={styles.banner__wrap}>
+            <img className={!isMobile ? styles.banner__logo : styles.disabled} src={LogoRow} alt="" />
+            <img className={isMobile ? styles.banner__logo : styles.disabled} src={LogoRowMobile} alt="" />
+          </div>
           <div className={styles.banner__main}>
             체계적인 진료와
             {'\n'}
@@ -22,6 +30,7 @@ export default function Home() {
             정성과 신뢰를 바탕으로 항상 노력하겠습니다.
           </div>
         </div>
+
         <div className={styles.introduce}>
           <div className={styles.introduce__phrase}>
             <div className={styles['introduce__phrase--main']}>해득금천한의원</div>
@@ -31,8 +40,80 @@ export default function Home() {
               환자 개개인에게 맞는 최고의 진료를 위해 노력하겠습니다.
             </div>
           </div>
-          <div className={styles.introduce__menu}>a</div>
+          <div className={styles.introduce__menu}>
+            <div className={styles['introduce__menu--item']}>
+              1대1 맞춤
+              {'\n'}
+              한방치료
+            </div>
+            <div className={styles['introduce__menu--item']}>
+              365일
+              {'\n'}
+              상시 입원가능
+            </div>
+            <div className={styles['introduce__menu--item']}>
+              입원환자
+              {'\n'}
+              24시간 모니터링
+            </div>
+          </div>
         </div>
+
+        <div className={styles.doc}>
+          <span className={styles.doc__title}>의료진 소개</span>
+          <div className={styles.doc__list}>
+            <div className={styles.doc__wrap}>
+              <div className={styles.doc__career}>
+                <div className={styles['doc__career--top']}>
+                  <span className={styles['doc__career--name']}>
+                    방예지
+                    {' '}
+                  </span>
+                  <span className={styles['doc__career--rank']}>원장</span>
+                  <span>한의사</span>
+                </div>
+                <ul className={styles['doc__career--ul']}>
+                  <li className={styles['doc__career--list']}>현) 해득금천한의원 진료원장</li>
+                  <li className={styles['doc__career--list']}>전) 맑은숲한의원 인천논현점 진료원장</li>
+                  <li className={styles['doc__career--list']}>원광대학교 한의과대학 졸업</li>
+                  <li className={styles['doc__career--list']}>소문학회 정회원</li>
+                  <li className={styles['doc__career--list']}>대한한의학회 정회원</li>
+                  <li className={styles['doc__career--list']}>척추신경추나의학회 회원</li>
+                  <li className={styles['doc__career--list']}>대한동의방약학회 회원</li>
+                  <li className={styles['doc__career--list']}>한방비만학회 회원</li>
+                  <li className={styles['doc__career--list']}>대한한방신경정신과학회 회원</li>
+                  <li className={styles['doc__career--list']}>대한스포츠한의학회 회원</li>
+                </ul>
+              </div>
+              <div className={styles.doc__img}>
+                <img src={Yeji} alt="" />
+              </div>
+              <div className={styles.doc__name}>
+                <span className={styles['doc__name--name']}>방예지</span>
+                원장
+              </div>
+            </div>
+            <div className={styles.doc__wrap}>
+              <div className={styles.doc__img}>
+                <img src={Hyein} alt="" />
+              </div>
+              <div className={styles.doc__name}>
+                <span className={styles['doc__name--name']}>김혜인</span>
+                대표원장
+              </div>
+            </div>
+            <div className={styles.doc__wrap}>
+              <div className={styles.doc__img}>
+                <img src={Dahee} alt="" />
+              </div>
+              <div className={styles.doc__name}>
+                <span className={styles['doc__name--name']}>허다희</span>
+                원장
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className={styles.sideMenu}>
           <a
             className={styles.sideMenu__item}
