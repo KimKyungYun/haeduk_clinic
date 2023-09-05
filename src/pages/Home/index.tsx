@@ -94,6 +94,28 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.doc__wrap}>
+              <div className={styles.doc__career}>
+                <div className={styles['doc__career--top']}>
+                  <span className={styles['doc__career--name']}>
+                    김혜인
+                    {' '}
+                  </span>
+                  <span className={styles['doc__career--rank']}>대표원장</span>
+                  <span>한의사</span>
+                </div>
+                <ul className={styles['doc__career--ul']}>
+                  <li className={styles['doc__career--list']}>현) 해득금천한의원 진료원장</li>
+                  <li className={styles['doc__career--list']}>전) 맑은숲한의원 인천논현점 진료원장</li>
+                  <li className={styles['doc__career--list']}>원광대학교 한의과대학 졸업</li>
+                  <li className={styles['doc__career--list']}>소문학회 정회원</li>
+                  <li className={styles['doc__career--list']}>대한한의학회 정회원</li>
+                  <li className={styles['doc__career--list']}>척추신경추나의학회 회원</li>
+                  <li className={styles['doc__career--list']}>대한동의방약학회 회원</li>
+                  <li className={styles['doc__career--list']}>한방비만학회 회원</li>
+                  <li className={styles['doc__career--list']}>대한한방신경정신과학회 회원</li>
+                  <li className={styles['doc__career--list']}>대한스포츠한의학회 회원</li>
+                </ul>
+              </div>
               <div className={styles.doc__img}>
                 <img src={Hyein} alt="" />
               </div>
@@ -103,6 +125,28 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.doc__wrap}>
+              <div className={styles.doc__career}>
+                <div className={styles['doc__career--top']}>
+                  <span className={styles['doc__career--name']}>
+                    허다희
+                    {' '}
+                  </span>
+                  <span className={styles['doc__career--rank']}>원장</span>
+                  <span>한의사</span>
+                </div>
+                <ul className={styles['doc__career--ul']}>
+                  <li className={styles['doc__career--list']}>현) 해득금천한의원 진료원장</li>
+                  <li className={styles['doc__career--list']}>전) 맑은숲한의원 인천논현점 진료원장</li>
+                  <li className={styles['doc__career--list']}>원광대학교 한의과대학 졸업</li>
+                  <li className={styles['doc__career--list']}>소문학회 정회원</li>
+                  <li className={styles['doc__career--list']}>대한한의학회 정회원</li>
+                  <li className={styles['doc__career--list']}>척추신경추나의학회 회원</li>
+                  <li className={styles['doc__career--list']}>대한동의방약학회 회원</li>
+                  <li className={styles['doc__career--list']}>한방비만학회 회원</li>
+                  <li className={styles['doc__career--list']}>대한한방신경정신과학회 회원</li>
+                  <li className={styles['doc__career--list']}>대한스포츠한의학회 회원</li>
+                </ul>
+              </div>
               <div className={styles.doc__img}>
                 <img src={Dahee} alt="" />
               </div>
