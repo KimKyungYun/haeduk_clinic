@@ -25,7 +25,7 @@ export default function Home() {
             맞춤 의료 서비스
           </div>
           <div className={styles.banner__sub}>
-            개개인의 맞춤진료를 통하여 각각의 환자분들에게 최선을 다하는 것이 해운누리의 진료 철학입니다.
+            개개인의 맞춤진료를 통하여 각각의 환자분들에게 최선을 다하는 것이 해득금천의 진료 철학입니다.
             {'\n'}
             정성과 신뢰를 바탕으로 항상 노력하겠습니다.
           </div>
@@ -69,7 +69,7 @@ export default function Home() {
                     방예지
                     {' '}
                   </span>
-                  <span className={styles['doc__career--rank']}>원장</span>
+                  <span className={styles['doc__career--rank']}>진료원장</span>
                   <span>한의사</span>
                 </div>
                 <ul className={styles['doc__career--ul']}>
@@ -90,7 +90,7 @@ export default function Home() {
               </div>
               <div className={styles.doc__name}>
                 <span className={styles['doc__name--name']}>방예지</span>
-                원장
+                진료원장
               </div>
             </div>
             <div className={styles.doc__wrap}>
@@ -104,16 +104,17 @@ export default function Home() {
                   <span>한의사</span>
                 </div>
                 <ul className={styles['doc__career--ul']}>
-                  <li className={styles['doc__career--list']}>현) 해득금천한의원 진료원장</li>
-                  <li className={styles['doc__career--list']}>전) 맑은숲한의원 인천논현점 진료원장</li>
+                  <li className={styles['doc__career--list']}>현) 해득금천한의원 대표원장</li>
+                  <li className={styles['doc__career--list']}>전) 광덕안정한의원 일산주엽점 원장</li>
+                  <li className={styles['doc__career--list']}>전) 미올한의원 파주운정점 진료원장</li>
+                  <li className={styles['doc__career--list']}>전) 누베베한의원 강남점 진료원장</li>
                   <li className={styles['doc__career--list']}>원광대학교 한의과대학 졸업</li>
-                  <li className={styles['doc__career--list']}>소문학회 정회원</li>
-                  <li className={styles['doc__career--list']}>대한한의학회 정회원</li>
-                  <li className={styles['doc__career--list']}>척추신경추나의학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한동의방약학회 회원</li>
                   <li className={styles['doc__career--list']}>한방비만학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한한방신경정신과학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한스포츠한의학회 회원</li>
+                  <li className={styles['doc__career--list']}>대한약침학회 회원</li>
+                  <li className={styles['doc__career--list']}>대한한방부인과학회 회원</li>
+                  <li className={styles['doc__career--list']}>척추신경추나의학회 회원</li>
+                  <li className={styles['doc__career--list']}>대한한의학회 회원</li>
+                  <li className={styles['doc__career--list']}>턱관절균형의학회 FCST 일반과정 수료</li>
                 </ul>
               </div>
               <div className={styles.doc__img}>
@@ -131,20 +132,18 @@ export default function Home() {
                     허다희
                     {' '}
                   </span>
-                  <span className={styles['doc__career--rank']}>원장</span>
+                  <span className={styles['doc__career--rank']}>진료원장</span>
                   <span>한의사</span>
                 </div>
                 <ul className={styles['doc__career--ul']}>
                   <li className={styles['doc__career--list']}>현) 해득금천한의원 진료원장</li>
-                  <li className={styles['doc__career--list']}>전) 맑은숲한의원 인천논현점 진료원장</li>
-                  <li className={styles['doc__career--list']}>원광대학교 한의과대학 졸업</li>
-                  <li className={styles['doc__career--list']}>소문학회 정회원</li>
-                  <li className={styles['doc__career--list']}>대한한의학회 정회원</li>
-                  <li className={styles['doc__career--list']}>척추신경추나의학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한동의방약학회 회원</li>
+                  <li className={styles['doc__career--list']}>한방부인과 전문의</li>
+                  <li className={styles['doc__career--list']}>세명대학교한방병원 한방부인과 레지던트 수료</li>
+                  <li className={styles['doc__career--list']}>세명대학교 한의과대학 졸업</li>
+                  <li className={styles['doc__career--list']}>대한한방부인과학회 정회원</li>
                   <li className={styles['doc__career--list']}>한방비만학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한한방신경정신과학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한스포츠한의학회 회원</li>
+                  <li className={styles['doc__career--list']}>대한약침학회 회원</li>
+                  <li className={styles['doc__career--list']}>대한한의학회 회원</li>
                 </ul>
               </div>
               <div className={styles.doc__img}>
@@ -152,7 +151,7 @@ export default function Home() {
               </div>
               <div className={styles.doc__name}>
                 <span className={styles['doc__name--name']}>허다희</span>
-                원장
+                진료원장
               </div>
             </div>
           </div>

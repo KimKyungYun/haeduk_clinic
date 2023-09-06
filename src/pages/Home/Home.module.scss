@@ -1,7 +1,7 @@
 @use "src/utils/styles/mediaQuery" as media;
 
 .template {
-  max-width: 100vw;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
   &__wrap {
     position: absolute;
@@ -108,12 +109,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 100px 0;
   
   &__phrase {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
 
     &--main {
       font-size: 50px;
@@ -131,7 +132,6 @@
   }
 
   &__menu {
-    width: 50%;
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
@@ -140,7 +140,6 @@
     @include media.media-breakpoint-down(mobile) {
       width: 100%;
     }
-
     
     &--item {
       display: flex;
@@ -155,6 +154,7 @@
       font-weight: 900;
       white-space: pre-wrap;
       text-align: center;
+      margin: 10px;
 
       @include media.media-breakpoint-down(mobile) {
         width: 30vw;
@@ -182,7 +182,7 @@
   }
 
   &__list {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
