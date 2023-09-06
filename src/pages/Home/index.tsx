@@ -8,6 +8,7 @@ import Dahee from 'assets/image/doctor/dahi.png';
 import Hyein from 'assets/image/doctor/hyein.png';
 import useMediaQuery from 'utils/hooks/useMediaQuery';
 import styles from './Home.module.scss';
+import KakaoMap from './components/kakakoMap';
 
 export default function Home() {
   const { isMobile } = useMediaQuery();
@@ -156,7 +157,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-
+        <KakaoMap />
         <div className={styles.sideMenu}>
           <a
             className={styles.sideMenu__item}
