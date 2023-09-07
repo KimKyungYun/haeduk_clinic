@@ -302,11 +302,11 @@ export default function Home() {
               ALL RIGHTS RESERVED
             </span>
           </div>
-          <img className={styles.footer__logo} src={LogoRow} alt="" />
           <div className={styles.footer__phone}>
             <Call />
             02-6952-3988
           </div>
+          <img className={styles.footer__logo} src={LogoRow} alt="" />
         </div>
 
         <div className={styles.sideMenu}>
