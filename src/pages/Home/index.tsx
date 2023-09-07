@@ -263,7 +263,10 @@ export default function Home() {
           <KakaoMap />
           <div className={styles.map__parking}>
             <div className={styles['map__parking--title']}>
-              해득금천한의원 주차장안내
+              해득금천한의원
+              {'\n'}
+              {' '}
+              주차장안내
             </div>
             <div className={styles['map__parking--guide']}>
               시흥대로 224 리메인시티 주차장 (우리은행 건물)
