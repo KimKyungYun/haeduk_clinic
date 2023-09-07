@@ -31,7 +31,14 @@ body::after {
   overflow:hidden;
   z-index:-1;
 
-  content: url('./assets/image/main.jpg');
+  content: url('./assets/image/main.jpg') 
+  url('./assets/image/slider/slide.png')
+  url('./assets/image/slider/slide2.png')
+  url('./assets/image/slider/slide3.png')
+  url('./assets/image/slider/slide4.png')
+  url('./assets/image/doctor/dahi.png') 
+  url('./assets/image/doctor/hyein.png') 
+  url('./assets/image/doctor/yeji.png');
 }
 button {
   font-family: SUIT, system-ui;

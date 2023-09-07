@@ -266,19 +266,11 @@ export default function Home() {
               해득금천한의원 주차장안내
             </div>
             <div className={styles['map__parking--guide']}>
-              해득금천한의원을 찾아주시는 분들께 알려드립니다.
-              {'\n'}
-              해득금천한의원을 방문해 주시는 모든 분들은
-              {'\n'}
-              병원 맞은편 골목에 위치한
-              {' '}
-              <strong style={{ color: '#000000' }}>리메인시티 건물 주차장</strong>
-              을 이용해주세요.
+              시흥대로 224 리메인시티 주차장 (우리은행 건물)
               {'\n'}
               최대
-              {' '}
               <strong style={{ color: '#ff0000' }}>2시간</strong>
-              까지 무료로 이용 가능합니다.
+              주차지원 가능합니다.
             </div>
           </div>
         </div>
