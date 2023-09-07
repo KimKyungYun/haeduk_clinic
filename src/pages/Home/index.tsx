@@ -37,8 +37,8 @@ export default function Home() {
       <div className={styles.content}>
         <div className={styles.banner}>
           <div className={styles.banner__wrap}>
-            <img className={!isMobile ? styles.banner__logo : styles.disabled} src={LogoRow} alt="" />
-            <img className={isMobile ? styles.banner__logo : styles.disabled} src={LogoRowMobile} alt="" />
+            <img className={!isMobile ? styles.banner__logo : styles.disabled} src={LogoRow} alt="logo" />
+            <img className={isMobile ? styles.banner__logo : styles.disabled} src={LogoRowMobile} alt="logo" />
           </div>
           <div className={styles.banner__main}>
             체계적인 진료
@@ -46,7 +46,9 @@ export default function Home() {
             체질 맞춤 처방
           </div>
           <div className={styles.banner__sub}>
-            개개인의 맞춤 진료를 통하여 환자분들에게 최선을 다하는 것이 해득금천의 진료 철학입니다.
+            개개인의 맞춤 진료를 통하여 환자분들에게
+            {isMobile && <br />}
+            최선을 다하는 것이 해득금천의 진료 철학입니다.
             {'\n'}
             정성과 진심을 다해 진료하겠습니다.
           </div>
@@ -58,7 +60,7 @@ export default function Home() {
             <div className={styles['introduce__phrase--sub']}>
               해득금천만의 신뢰할 수 있는 진료
               {'\n'}
-              환자 개개인에게 맞는 최고의 진료를 위해 노력하겠습니다.
+              모든 환자분들께서 건강을 회복하실 수 있도록 최선을 다하겠습니다
             </div>
           </div>
           <div className={styles.introduce__menu}>
@@ -75,7 +77,12 @@ export default function Home() {
             <div className={styles['introduce__menu--item']}>
               입원환자
               {'\n'}
-              24시간 모니터링
+              <span>
+                24시간
+                {' '}
+                {'\n'}
+                모니터링
+              </span>
             </div>
           </div>
         </div>
@@ -109,7 +116,7 @@ export default function Home() {
                 </ul>
               </div>
               <div className={styles.doc__img}>
-                <img src={Hyein} alt="" />
+                <img src={Hyein} alt="chief" />
               </div>
               <div className={styles.doc__name}>
                 <span className={styles['doc__name--name']}>김혜인</span>
@@ -141,7 +148,7 @@ export default function Home() {
                 </ul>
               </div>
               <div className={styles.doc__img}>
-                <img src={Yeji} alt="" />
+                <img src={Yeji} alt="doc" />
               </div>
               <div className={styles.doc__name}>
                 <span className={styles['doc__name--name']}>방예지</span>
@@ -174,7 +181,7 @@ export default function Home() {
                 </ul>
               </div>
               <div className={styles.doc__img}>
-                <img src={Hyein} alt="" />
+                <img src={Hyein} alt="chief" />
               </div>
               <div className={styles.doc__name}>
                 <span className={styles['doc__name--name']}>김혜인</span>
@@ -204,7 +211,7 @@ export default function Home() {
                 </ul>
               </div>
               <div className={styles.doc__img}>
-                <img src={Dahee} alt="" />
+                <img src={Dahee} alt="doc" />
               </div>
               <div className={styles.doc__name}>
                 <span className={styles['doc__name--name']}>허다희</span>
@@ -219,10 +226,10 @@ export default function Home() {
           </span>
           둘러보기
           <Slider className={styles.slider} {...settings}>
-            <img src={Slide} alt="" />
-            <img src={Slide1} alt="" />
-            <img src={Slide2} alt="" />
-            <img src={Slide3} alt="" />
+            <img src={Slide} alt="slide" />
+            <img src={Slide1} alt="slide" />
+            <img src={Slide2} alt="slide" />
+            <img src={Slide3} alt="slide" />
           </Slider>
         </div>
 
@@ -230,7 +237,10 @@ export default function Home() {
           <div className={styles.time__cover} />
           <div className={styles.time__left}>
             <span className={styles['time__left--title']}>해득금천한의원</span>
-            서울시 금천구 금하로 631, 2층, 3층 (시흥동)
+            서울시 금천구 금하로 631
+            {'\n'}
+            {' '}
+            2층,3층 (시흥동)
             <a className={styles['time__left--phone']} href="tel:02-6952-3988">
               <Phone />
               02-6952-3988
@@ -241,38 +251,60 @@ export default function Home() {
             <div className={styles['time__left--info']}>
               <div className={styles.time__container}>
                 <span className={styles['time__container--day']}>평일</span>
-                <span className={styles['time__container--time']}>오전 8:00 ~ 오후 9:00</span>
-              </div>
-              <div className={styles.time__container}>
-                <span className={styles['time__container--day']}>점심시간</span>
-                <span className={styles['time__container--time']}>오후 1:00 ~ 오후 2:00</span>
+                <span className={styles['time__container--time']}>
+                  오전 8시 ~ 오후 9시
+                </span>
               </div>
               <div />
               <div className={styles.time__container}>
                 <span className={styles['time__container--day']}>주말·공휴일</span>
-                <span className={styles['time__container--time']}>오전 8:00 ~ 오후 5:00</span>
+                <span className={styles['time__container--time']}>
+                  오전 8시 ~ 오후 5시
+                </span>
               </div>
             </div>
+            <div className={styles.time__container}>
+              <span className={styles['time__container--day']}>점심시간</span>
+              <span className={styles['time__container--time']}>
+                오후 1시 ~ 오후 2시
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.treatment}>
+          <div className={styles.treatment__phrase}>
+            <div className={styles['treatment__phrase--t1']}>추나</div>
+            <div className={styles['treatment__phrase--t2']}>약침/봉침</div>
+          </div>
+          <div className={styles.treatment__phrase}>
+            <div className={styles['treatment__phrase--t3']}>교통사고</div>
+            <div className={styles['treatment__phrase--t4']}>통증매선</div>
           </div>
         </div>
 
         <div className={styles.map}>
           <span className={styles.map__title}>
-            해득금천한의원 오시는길
+            오시는길
           </span>
           <KakaoMap />
           <div className={styles.map__parking}>
             <div className={styles['map__parking--title']}>
-              해득금천한의원
-              {'\n'}
-              {' '}
               주차장안내
             </div>
             <div className={styles['map__parking--guide']}>
-              시흥대로 224 리메인시티 주차장 (우리은행 건물)
+              <span>
+                시흥대로 224 리메인시티 주차장
+                {'\n'}
+                (우리은행 건물)
+              </span>
               {'\n'}
               최대
-              <strong style={{ color: '#ff0000' }}>2시간</strong>
+              {' '}
+              <strong style={{ color: '#ff0000' }}>
+                2시간
+                {' '}
+              </strong>
               주차지원 가능합니다.
             </div>
           </div>
@@ -307,7 +339,7 @@ export default function Home() {
             02-6952-3988
           </div>
           <div className={styles.footer__logo}>
-            <img src={LogoRow} alt="" />
+            <img src={LogoRow} alt="logo" />
           </div>
         </div>
 

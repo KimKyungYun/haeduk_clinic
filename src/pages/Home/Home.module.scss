@@ -1,5 +1,30 @@
 @use "src/utils/styles/mediaQuery" as media;
 
+@mixin treat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0 0 0 / 50%);
+  background-position: center;
+  background-blend-mode: multiply;
+  background-size: cover;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+
+  @include media.media-breakpoint-down(mobile){
+    width: 50vw;
+    height: 50vw;
+    border-radius: 0;
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+  }
+
+}
+
 .template {
   width: 100%;
   height: 100%;
@@ -33,6 +58,7 @@
   @include media.media-breakpoint-down(mobile) {
     background-position: 70%;
   }
+
   &__wrap {
     position: absolute;
     display: flex;
@@ -92,7 +118,6 @@
     @include media.media-breakpoint-down(mobile) {
       font-size: 16px;
     }
-
   }
 }
 
@@ -113,6 +138,11 @@
       font-size: 50px;
       font-weight: 700;
       margin-bottom: 20px;
+
+      @include media.media-breakpoint-down(mobile) {
+        font-size: 40px;
+      }
+  
     }
 
     &--sub {
@@ -121,7 +151,11 @@
       text-align: center;
       white-space: pre-wrap;
       line-height: 36px;
-    }
+
+      @include media.media-breakpoint-down(mobile) {
+        font-size: 20px;
+      }
+      }
   }
 
   &__menu {
@@ -138,6 +172,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       width: 300px;
       height: 300px;
       border-radius: 100%;
@@ -150,11 +185,15 @@
       margin: 20px 40px;
 
       @include media.media-breakpoint-down(mobile) {
-        width: 30vw;
-        height: 30vw;
+        width: 31vw;
+        height: 31vw;
         font-size: 18px;
-        margin: 5px;
-      }  
+        margin: 3px;
+      }
+
+      span {
+        white-space: pre-wrap;
+      }
     }
   }
 }
@@ -206,7 +245,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     white-space: pre-wrap;
     color: #ffffff;
     font-size: 2rem;
@@ -220,7 +259,11 @@
     &--top {
       display: flex;
       align-items: center;
-      margin-bottom: 10px;
+      margin: 30px 0;
+
+      @include media.media-breakpoint-down(mobile) {
+        margin: 20px 0 10px;
+      }
     }
 
     &--name {
@@ -241,6 +284,10 @@
 
     &--list {
       margin: 5px 0;
+
+      @include media.media-breakpoint-down(mobile) {
+        font-size: 1.7rem;
+      }
     }
   }
 
@@ -361,10 +408,18 @@
     &--guide {
       font-size: 25px;
       text-align: center;
-      white-space: pre-wrap;
       color: #666666;
+      white-space: pre-wrap;
       border: 2px solid #dddddd;
       padding: 40px 0;
+
+      span {
+        white-space: normal;
+        @include media.media-breakpoint-down(mobile) {
+          white-space: pre-wrap;
+        }
+
+      }
     }
   }
 }
@@ -402,7 +457,7 @@
     font-size: 25px;
 
     @include media.media-breakpoint-down(mobile){
-      font-size: 20px;
+      font-size: 18px;
     }
 
     &--day {
@@ -415,10 +470,15 @@
       color: #000000;
       font-weight: 700;
       border-radius: 20px;
+      font-size: 25px;
+
+      @include media.media-breakpoint-down(mobile) {
+        font-size: 20px;
+      }
     }
 
     &--time {
-      font-weight: 500;      
+      font-weight: 500;
     }
   }
 
@@ -430,11 +490,11 @@
     text-align: center;
     flex-direction: column;
     color: #ffffff;
-    white-space: pre-wrap;
     font-size: 30px;
     margin: 20px;
-
+    
     @include media.media-breakpoint-down(mobile){
+      white-space: pre-wrap;
       font-size: 20px;
     }
 
@@ -453,9 +513,10 @@
       color: #81bef7;
       fill: #81bef7;
       text-decoration: none;
+      font-size: 40px;
 
       @include media.media-breakpoint-down(mobile){
-        font-size: 25px;
+        font-size: 30px;
       }
     }
 
@@ -463,6 +524,50 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+    }
+  }
+}
+
+.treatment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+
+  @include media.media-breakpoint-down(mobile){
+    flex-direction: column;
+  }
+  
+  &__phrase {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+
+    @include media.media-breakpoint-down(mobile){
+      width: 100%;
+      justify-content:center;
+    }
+
+  &--t1 {
+      @include treat;
+      background-image: url('../../assets/image/treatment/chuna.jpeg');
+    }
+    
+    &--t2 {
+      @include treat;
+      background-image: url('../../assets/image/treatment/medicine.jpeg');
+    }
+
+    &--t3 {
+      @include treat;
+      background-image: url('../../assets/image/treatment/car.jpeg');
+    }
+
+    &--t4 {
+      @include treat;
+      background-image: url('../../assets/image/treatment/treat.JPG');
     }
   }
 }
