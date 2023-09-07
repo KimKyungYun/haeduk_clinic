@@ -306,7 +306,9 @@ export default function Home() {
             <Call />
             02-6952-3988
           </div>
-          <img className={styles.footer__logo} src={LogoRow} alt="" />
+          <div className={styles.footer__logo}>
+            <img src={LogoRow} alt="" />
+          </div>
         </div>
 
         <div className={styles.sideMenu}>

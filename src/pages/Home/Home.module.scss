@@ -508,12 +508,18 @@
   }
 
   &__logo {
-    height: 50px;
-    margin-right: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
 
-    @include media.media-breakpoint-down(mobile) {
-      height: 40px;
-      margin-top: 20px;
+    img {
+      height: 50px;
+      margin-right: 10px;
+  
+      @include media.media-breakpoint-down(mobile) {
+        height: 40px;
+        margin-top: 20px;
+      }
     }
   }
 
