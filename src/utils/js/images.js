@@ -14,7 +14,7 @@ import P13 from 'assets/image/treatment/treat.png';
 import P14 from 'assets/image/slider/admission.png';
 import P15 from 'assets/image/slider/admission3.png';
 import P16 from 'assets/image/slider/doc1.png';
-import P17 from 'assets/image/slider/doc2.jpg';
+import P17 from 'assets/image/slider/doc2.png';
 import P18 from 'assets/image/slider/lobby.png';
 import P19 from 'assets/image/slider/stair.png';
 
