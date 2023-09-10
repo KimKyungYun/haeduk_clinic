@@ -1,32 +1,5 @@
 @use "src/utils/styles/mediaQuery" as media;
 
-@mixin treat {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  height: 300px;
-  background-color: rgba(0 0 0 / 50%);
-  background-position: center;
-  background-blend-mode: multiply;
-  background-size: cover;
-  border-radius: 10px;
-  font-size: 30px;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0 10px;
-
-  @include media.media-breakpoint-down(mobile){
-    width: 50vw;
-    height: 50vw;
-    border-radius: 0;
-    margin: 0;
-    border: 1px solid #ffffff;
-    border-collapse: collapse;
-  }
-
-}
-
 .template {
   width: 100%;
   height: 100%;
@@ -151,10 +124,10 @@
       font-size: 24px;
       font-weight: 500;
       text-align: center;
-      white-space: pre-wrap;
       line-height: 36px;
-
+      
       @include media.media-breakpoint-down(mobile) {
+        white-space: pre-wrap;
         font-size: 20px;
       }
       }
@@ -555,22 +528,110 @@
     }
 
   &--t1 {
-      @include treat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0 0 0 / 50%);
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 10px;
+
+    @include media.media-breakpoint-down(mobile){
+      width: 50vw;
+      height: 50vw;
+      border-radius: 0;
+      margin: 0;
+      border: 1px solid #ffffff;
+      border-collapse: collapse;
+    }
       background-image: url('../../assets/image/treatment/chuna.png');
     }
     
     &--t2 {
-      @include treat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: 300px;
+      background-color: rgba(0 0 0 / 50%);
+      background-position: center;
+      background-blend-mode: multiply;
+      background-size: cover;
+      border-radius: 10px;
+      font-size: 30px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 10px;
+
+      @include media.media-breakpoint-down(mobile){
+        width: 50vw;
+        height: 50vw;
+        border-radius: 0;
+        margin: 0;
+        border: 1px solid #ffffff;
+        border-collapse: collapse;
+      }
       background-image: url('../../assets/image/treatment/medicine.png');
     }
 
     &--t3 {
-      @include treat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: 300px;
+      background-color: rgba(0 0 0 / 50%);
+      background-position: center;
+      background-blend-mode: multiply;
+      background-size: cover;
+      border-radius: 10px;
+      font-size: 30px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 10px;
+
+      @include media.media-breakpoint-down(mobile){
+        width: 50vw;
+        height: 50vw;
+        border-radius: 0;
+        margin: 0;
+        border: 1px solid #ffffff;
+        border-collapse: collapse;
+      }
       background-image: url('../../assets/image/treatment/car.png');
     }
 
     &--t4 {
-      @include treat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: 300px;
+      background-color: rgba(0 0 0 / 50%);
+      background-position: center;
+      background-blend-mode: multiply;
+      background-size: cover;
+      border-radius: 10px;
+      font-size: 30px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 10px;
+
+      @include media.media-breakpoint-down(mobile){
+        width: 50vw;
+        height: 50vw;
+        border-radius: 0;
+        margin: 0;
+        border: 1px solid #ffffff;
+        border-collapse: collapse;
+      }
       background-image: url('../../assets/image/treatment/treat.png');
     }
   }

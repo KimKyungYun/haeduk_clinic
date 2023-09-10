@@ -7,8 +7,11 @@ export default function Introduce() {
         <div className={styles['introduce__phrase--main']}>해득금천한의원</div>
         <div className={styles['introduce__phrase--sub']}>
           해득금천만의 신뢰할 수 있는 진료
+          <br />
+          모든 환자분들께서 건강을 회복하실 수 있도록
           {'\n'}
-          모든 환자분들께서 건강을 회복하실 수 있도록 최선을 다하겠습니다
+          {' '}
+          최선을 다하겠습니다
         </div>
       </div>
       <div className={styles.introduce__menu}>

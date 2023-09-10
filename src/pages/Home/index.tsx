@@ -119,7 +119,7 @@ export default function Home() {
         <div className={styles.sideMenu}>
           <a
             className={styles.sideMenu__map}
-            href={isMobile ? 'https://m.map.naver.com/search2/search.naver?query=%ED%95%B4%EB%93%9D%EA%B8%88%EC%B2%9C%ED%95%9C%EC%9D%98%EC%9B%90&sm=sug&style=v5'
+            href={isMobile ? 'https://m.map.naver.com/search2/search.naver?query=%ED%95%B4%EB%93%9D%EA%B8%88%EC%B2%9C%ED%95%9C%EC%9D%98%EC%9B%90&sm=sug&style=v5#/map/1/1669555615'
               : 'https://map.naver.com/p/entry/place/1669555615?lng=126.9012693&lat=37.4549376&placePath=%2Fhome%3Fentry%3Dplt&c=15.00,0,0,0,dh'}
           >
             <Location />
