@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.312363b4.css",
-    "main.js": "/static/js/main.904b3ecd.js",
+    "main.css": "/static/css/main.46ff10a8.css",
+    "main.js": "/static/js/main.1aa19a74.js",
     "static/js/787.8f51dbdf.chunk.js": "/static/js/787.8f51dbdf.chunk.js",
-    "static/media/slide3.png": "/static/media/slide3.ab9ace2b088e4b14bd0d.png",
-    "static/media/main.jpg": "/static/media/main.5c8c568f97f5ec8a1c0c.jpg",
-    "static/media/slide.png": "/static/media/slide.bb45832f9cd0c2241a1b.png",
-    "static/media/slide1.png": "/static/media/slide1.a80f25207661ca3a62f4.png",
-    "static/media/slide4.png": "/static/media/slide4.0c656a934bd0fed3a26f.png",
-    "static/media/slide2.png": "/static/media/slide2.99ff302f0a19204dbaa9.png",
     "static/media/treat.png": "/static/media/treat.36f3907f6b4550cc783b.png",
     "static/media/yeji.png": "/static/media/yeji.7f831b16f261225c84c1.png",
     "static/media/treat.JPG": "/static/media/treat.61015bc8402f40b8653f.JPG",
     "static/media/dahi.png": "/static/media/dahi.d29f59112a4e222ea600.png",
+    "static/media/slide3.png": "/static/media/slide3.687fe9bc2acd7b9acc2b.png",
+    "static/media/slide1.png": "/static/media/slide1.0fffd63ecfd85cc19c1c.png",
+    "static/media/slide.png": "/static/media/slide.387a0de581750735ec6c.png",
+    "static/media/slide2.png": "/static/media/slide2.f0f5cfb8eff95e90f72f.png",
+    "static/media/slide7.JPG": "/static/media/slide7.db6d1491a7bcf64332ac.JPG",
+    "static/media/slide4.png": "/static/media/slide4.0817a97797e8d025f0b0.png",
     "static/media/main2.jpg": "/static/media/main2.2235b951aece9fbbe95c.jpg",
+    "static/media/slide5.JPG": "/static/media/slide5.46fa64672b0bbe04dbd7.JPG",
     "static/media/medicine.jpeg": "/static/media/medicine.721cafb3ab5e02d47455.jpeg",
     "static/media/car.jpeg": "/static/media/car.ede5150881780e1d0fab.jpeg",
     "static/media/chuna.jpeg": "/static/media/chuna.a5b7541d35e4bc5b2a5f.jpeg",
@@ -33,12 +34,12 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "static/media/location.svg": "/static/media/location.e3c95818dbbc710336c325be62cec027.svg",
-    "main.312363b4.css.map": "/static/css/main.312363b4.css.map",
-    "main.904b3ecd.js.map": "/static/js/main.904b3ecd.js.map",
+    "main.46ff10a8.css.map": "/static/css/main.46ff10a8.css.map",
+    "main.1aa19a74.js.map": "/static/js/main.1aa19a74.js.map",
     "787.8f51dbdf.chunk.js.map": "/static/js/787.8f51dbdf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.312363b4.css",
-    "static/js/main.904b3ecd.js"
+    "static/css/main.46ff10a8.css",
+    "static/js/main.1aa19a74.js"
   ]
 }
