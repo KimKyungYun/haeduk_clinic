@@ -2,36 +2,22 @@
 import { ReactComponent as Call } from 'assets/svg/call.svg';
 import { ReactComponent as Location } from 'assets/svg/location.svg';
 import { ReactComponent as Reservation } from 'assets/svg/reservation.svg';
-import { ReactComponent as Phone } from 'assets/svg/phone.svg';
 import LogoRow from 'assets/image/logo_row_gold_white.png';
 import LogoRowMobile from 'assets/image/logo_row_gold.png';
-import Yeji from 'assets/image/doctor/yeji.png';
-import Dahee from 'assets/image/doctor/dahi.png';
-import Hyein from 'assets/image/doctor/hyein.png';
 import useMediaQuery from 'utils/hooks/useMediaQuery';
-import Slide from 'assets/image/slider/slide.png';
-import Slide1 from 'assets/image/slider/slide1.png';
-import Slide2 from 'assets/image/slider/slide2.png';
-import Slide3 from 'assets/image/slider/slide3.png';
-import Slider from 'react-slick';
+import Time from './components/time';
 import KakaoMap from './components/kakakoMap';
 import styles from './Home.module.scss';
+import Doctor from './components/doctor';
+import SlideShow from './components/slideShow';
+import Introduce from './components/introduce';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 export default function Home() {
   const { isMobile } = useMediaQuery();
-  const settings = {
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    arrows: true,
-    speed: 700,
-    autoplaySpeed: 3500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+
   return (
     <div className={styles.template}>
       <div className={styles.content}>
@@ -54,223 +40,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.introduce}>
-          <div className={styles.introduce__phrase}>
-            <div className={styles['introduce__phrase--main']}>해득금천한의원</div>
-            <div className={styles['introduce__phrase--sub']}>
-              해득금천만의 신뢰할 수 있는 진료
-              {'\n'}
-              모든 환자분들께서 건강을 회복하실 수 있도록 최선을 다하겠습니다
-            </div>
-          </div>
-          <div className={styles.introduce__menu}>
-            <div className={styles['introduce__menu--item']}>
-              1대1 맞춤
-              {'\n'}
-              한방치료
-            </div>
-            <div className={styles['introduce__menu--item']}>
-              365일
-              {'\n'}
-              상시 입원가능
-            </div>
-            <div className={styles['introduce__menu--item']}>
-              입원환자
-              {'\n'}
-              <span>
-                24시간
-                {' '}
-                {'\n'}
-                모니터링
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.doc}>
-          <span className={styles.doc__title}>의료진 소개</span>
-          <div className={styles.doc__list}>
-            {isMobile && (
-            <div className={styles.doc__wrap}>
-              <div className={styles.doc__career}>
-                <div className={styles['doc__career--top']}>
-                  <span className={styles['doc__career--name']}>
-                    김혜인
-                    {' '}
-                  </span>
-                  <span className={styles['doc__career--rank']}>대표원장</span>
-                  <span>한의사</span>
-                </div>
-                <ul className={styles['doc__career--ul']}>
-                  <li className={styles['doc__career--list']}>현) 해득금천한의원 대표원장</li>
-                  <li className={styles['doc__career--list']}>전) 광덕안정한의원 일산주엽점 원장</li>
-                  <li className={styles['doc__career--list']}>전) 미올한의원 파주운정점 진료원장</li>
-                  <li className={styles['doc__career--list']}>전) 누베베한의원 강남점 진료원장</li>
-                  <li className={styles['doc__career--list']}>원광대학교 한의과대학 졸업</li>
-                  <li className={styles['doc__career--list']}>한방비만학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한약침학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한한방부인과학회 회원</li>
-                  <li className={styles['doc__career--list']}>척추신경추나의학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한한의학회 회원</li>
-                  <li className={styles['doc__career--list']}>턱관절균형의학회 FCST 일반과정 수료</li>
-                </ul>
-              </div>
-              <div className={styles.doc__img}>
-                <img src={Hyein} alt="chief" />
-              </div>
-              <div className={styles.doc__name}>
-                <span className={styles['doc__name--name']}>김혜인</span>
-                대표원장
-              </div>
-            </div>
-            )}
-            <div className={styles.doc__wrap}>
-              <div className={styles.doc__career}>
-                <div className={styles['doc__career--top']}>
-                  <span className={styles['doc__career--name']}>
-                    방예지
-                    {' '}
-                  </span>
-                  <span className={styles['doc__career--rank']}>진료원장</span>
-                  <span>한의사</span>
-                </div>
-                <ul className={styles['doc__career--ul']}>
-                  <li className={styles['doc__career--list']}>현) 해득금천한의원 진료원장</li>
-                  <li className={styles['doc__career--list']}>전) 맑은숲한의원 인천논현점 진료원장</li>
-                  <li className={styles['doc__career--list']}>원광대학교 한의과대학 졸업</li>
-                  <li className={styles['doc__career--list']}>소문학회 정회원</li>
-                  <li className={styles['doc__career--list']}>대한한의학회 정회원</li>
-                  <li className={styles['doc__career--list']}>척추신경추나의학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한동의방약학회 회원</li>
-                  <li className={styles['doc__career--list']}>한방비만학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한한방신경정신과학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한스포츠한의학회 회원</li>
-                </ul>
-              </div>
-              <div className={styles.doc__img}>
-                <img src={Yeji} alt="doc" />
-              </div>
-              <div className={styles.doc__name}>
-                <span className={styles['doc__name--name']}>방예지</span>
-                진료원장
-              </div>
-            </div>
-            {!isMobile && (
-            <div className={styles.doc__wrap}>
-              <div className={styles.doc__career}>
-                <div className={styles['doc__career--top']}>
-                  <span className={styles['doc__career--name']}>
-                    김혜인
-                    {' '}
-                  </span>
-                  <span className={styles['doc__career--rank']}>대표원장</span>
-                  <span>한의사</span>
-                </div>
-                <ul className={styles['doc__career--ul']}>
-                  <li className={styles['doc__career--list']}>현) 해득금천한의원 대표원장</li>
-                  <li className={styles['doc__career--list']}>전) 광덕안정한의원 일산주엽점 원장</li>
-                  <li className={styles['doc__career--list']}>전) 미올한의원 파주운정점 진료원장</li>
-                  <li className={styles['doc__career--list']}>전) 누베베한의원 강남점 진료원장</li>
-                  <li className={styles['doc__career--list']}>원광대학교 한의과대학 졸업</li>
-                  <li className={styles['doc__career--list']}>한방비만학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한약침학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한한방부인과학회 회원</li>
-                  <li className={styles['doc__career--list']}>척추신경추나의학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한한의학회 회원</li>
-                  <li className={styles['doc__career--list']}>턱관절균형의학회 FCST 일반과정 수료</li>
-                </ul>
-              </div>
-              <div className={styles.doc__img}>
-                <img src={Hyein} alt="chief" />
-              </div>
-              <div className={styles.doc__name}>
-                <span className={styles['doc__name--name']}>김혜인</span>
-                대표원장
-              </div>
-            </div>
-            )}
-            <div className={styles.doc__wrap}>
-              <div className={styles.doc__career}>
-                <div className={styles['doc__career--top']}>
-                  <span className={styles['doc__career--name']}>
-                    허다희
-                    {' '}
-                  </span>
-                  <span className={styles['doc__career--rank']}>진료원장</span>
-                  <span>한의사</span>
-                </div>
-                <ul className={styles['doc__career--ul']}>
-                  <li className={styles['doc__career--list']}>현) 해득금천한의원 진료원장</li>
-                  <li className={styles['doc__career--list']}>한방부인과 전문의</li>
-                  <li className={styles['doc__career--list']}>세명대학교한방병원 한방부인과 레지던트 수료</li>
-                  <li className={styles['doc__career--list']}>세명대학교 한의과대학 졸업</li>
-                  <li className={styles['doc__career--list']}>대한한방부인과학회 정회원</li>
-                  <li className={styles['doc__career--list']}>한방비만학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한약침학회 회원</li>
-                  <li className={styles['doc__career--list']}>대한한의학회 회원</li>
-                </ul>
-              </div>
-              <div className={styles.doc__img}>
-                <img src={Dahee} alt="doc" />
-              </div>
-              <div className={styles.doc__name}>
-                <span className={styles['doc__name--name']}>허다희</span>
-                진료원장
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.slide}>
-          <span className={styles.slide__title}>
-            해득금천 한의원
-          </span>
-          둘러보기
-          <Slider className={styles.slider} {...settings}>
-            <img src={Slide} alt="slide" />
-            <img src={Slide1} alt="slide" />
-            <img src={Slide2} alt="slide" />
-            <img src={Slide3} alt="slide" />
-          </Slider>
-        </div>
-
-        <div className={styles.time}>
-          <div className={styles.time__cover} />
-          <div className={styles.time__left}>
-            <span className={styles['time__left--title']}>해득금천한의원</span>
-            서울시 금천구 금하로 631
-            {'\n'}
-            {' '}
-            2층,3층 (시흥동)
-            <a className={styles['time__left--phone']} href="tel:02-6952-3988">
-              <Phone />
-              02-6952-3988
-            </a>
-          </div>
-          <div className={styles.time__left}>
-            <span className={styles['time__left--title']}>진료시간</span>
-            <div className={styles['time__left--info']}>
-              <div className={styles.time__container}>
-                <span className={styles['time__container--day']}>평일</span>
-                <span className={styles['time__container--time']}>
-                  오전 8시 ~ 오후 9시
-                </span>
-              </div>
-              <div />
-              <div className={styles.time__container}>
-                <span className={styles['time__container--day']}>주말·공휴일</span>
-                <span className={styles['time__container--time']}>
-                  오전 8시 ~ 오후 5시
-                </span>
-              </div>
-            </div>
-            <div className={styles.time__container}>
-              <span className={styles['time__container--day']}>점심시간</span>
-              <span className={styles['time__container--time']}>
-                오후 1시 ~ 오후 2시
-              </span>
-            </div>
-          </div>
-        </div>
+        <Introduce />
+        <Doctor />
+        <SlideShow />
+        <Time />
 
         <div className={styles.treatment}>
           <div className={styles.treatment__phrase}>

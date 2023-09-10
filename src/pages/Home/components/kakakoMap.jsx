@@ -20,7 +20,7 @@ export default function KakaoMap() {
       <MapMarker
         position={{ lat: 37.453887063036525, lng: 126.90161879243772 }}
         clickable
-        onClick={() => window.open('https://map.naver.com/p/entry/place/1669555615?c=15.00,0,0,0,dh')}
+        onClick={() => window.open('https://map.naver.com/p/entry/place/427542720?c=18.79,0,0,0,dh')}
         image={{ src: Parking, size: { width: 50, height: '100%' }, options: { offset: { x: 25, y: 55 } } }}
       />
     </Map>
