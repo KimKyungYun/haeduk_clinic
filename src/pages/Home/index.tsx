@@ -72,13 +72,7 @@ export default function Home() {
                 (우리은행 건물)
               </span>
               {'\n'}
-              최대
-              {' '}
-              <strong style={{ color: '#ff0000' }}>
-                2시간
-                {' '}
-              </strong>
-              주차지원 가능합니다.
+              최대 2시간 주차지원 가능합니다.
             </div>
           </div>
         </div>
