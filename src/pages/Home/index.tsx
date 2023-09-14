@@ -34,6 +34,7 @@ export default function Home() {
           <div className={styles.banner__sub}>
             개개인의 맞춤 진료를 통하여 환자분들에게
             {isMobile && <br />}
+            {' '}
             최선을 다하는 것이 해득금천의 진료 철학입니다.
             {'\n'}
             정성과 진심을 다해 진료하겠습니다.
