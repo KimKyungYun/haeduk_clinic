@@ -58,7 +58,6 @@ export default function Doctor() {
               <li className={styles['doc__career--list']}>세명대학교한방병원 한방부인과 레지던트 수료</li>
               <li className={styles['doc__career--list']}>세명대학교 한의과대학 졸업</li>
               <li className={styles['doc__career--list']}>대한한방부인과학회 정회원</li>
-              <li className={styles['doc__career--list']}>한방비만학회 회원</li>
               <li className={styles['doc__career--list']}>대한약침학회 회원</li>
               <li className={styles['doc__career--list']}>대한한의학회 회원</li>
             </ul>
