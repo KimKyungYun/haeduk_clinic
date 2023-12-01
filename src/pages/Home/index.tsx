@@ -62,21 +62,6 @@ export default function Home() {
             오시는길
           </span>
           <KakaoMap />
-          <div className={styles.map__parking}>
-            <div className={styles['map__parking--title']}>
-              주차장안내
-            </div>
-            <div className={styles['map__parking--guide']}>
-              <span>
-                시흥대로 224 리메인시티 주차장
-                {'\n'}
-                (우리은행 건물)
-              </span>
-              {'\n'}
-              최대 2시간 주차지원 가능합니다.
-            </div>
-          </div>
-        </div>
 
         <div className={styles.footer}>
           <div className={styles.footer__info}>
