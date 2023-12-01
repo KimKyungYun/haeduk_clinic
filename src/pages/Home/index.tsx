@@ -62,6 +62,7 @@ export default function Home() {
             오시는길
           </span>
           <KakaoMap />
+        </div>
 
         <div className={styles.footer}>
           <div className={styles.footer__info}>
