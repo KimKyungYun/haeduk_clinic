@@ -6,7 +6,7 @@ import P5 from 'assets/image/parking.png';
 import P6 from 'assets/image/treat.png';
 import P7 from 'assets/image/doctor/dahi.png';
 import P8 from 'assets/image/doctor/hyein.png';
-import P9 from 'assets/image/doctor/yeji.png';
+import P9 from 'assets/image/doctor/heewon.png';
 import P10 from 'assets/image/treatment/car.png';
 import P11 from 'assets/image/treatment/chuna.png';
 import P12 from 'assets/image/treatment/medicine.png';

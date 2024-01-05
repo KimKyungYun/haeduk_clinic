@@ -265,14 +265,15 @@
 
   &__img {
     width: 100%;
-    height: 100%;
+    height: 575px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     background-color: antiquewhite;
 
     img {
-      width: 80%;      
+      object-fit: cover;
+      height: 95%;
     }
   }
 

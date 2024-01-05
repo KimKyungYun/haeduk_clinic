@@ -1,5 +1,5 @@
-import Yeji from 'assets/image/doctor/yeji.png';
 import Dahee from 'assets/image/doctor/dahi.png';
+import HeeWon from 'assets/image/doctor/heewon.png';
 import Hyein from 'assets/image/doctor/hyein.png';
 import useMediaQuery from 'utils/hooks/useMediaQuery';
 import styles from '../Home.module.scss';
@@ -108,7 +108,7 @@ export default function Doctor() {
           <div className={styles.doc__career}>
             <div className={styles['doc__career--top']}>
               <span className={styles['doc__career--name']}>
-                방예지
+                최희원
                 {' '}
               </span>
               <span className={styles['doc__career--rank']}>진료원장</span>
@@ -116,22 +116,21 @@ export default function Doctor() {
             </div>
             <ul className={styles['doc__career--ul']}>
               <li className={styles['doc__career--list']}>현) 해득금천한의원 진료원장</li>
-              <li className={styles['doc__career--list']}>전) 맑은숲한의원 인천논현점 진료원장</li>
-              <li className={styles['doc__career--list']}>원광대학교 한의과대학 졸업</li>
-              <li className={styles['doc__career--list']}>소문학회 정회원</li>
-              <li className={styles['doc__career--list']}>대한한의학회 정회원</li>
-              <li className={styles['doc__career--list']}>척추신경추나의학회 회원</li>
-              <li className={styles['doc__career--list']}>대한동의방약학회 회원</li>
+              <li className={styles['doc__career--list']}>전) 북가좌경희한의원 진료원장</li>
+              <li className={styles['doc__career--list']}>전) 금맥한의원 진료원장</li>
+              <li className={styles['doc__career--list']}>전) 누베베한의원 부산점 진료원장</li>
+              <li className={styles['doc__career--list']}>전) 누베베한의원 홍대점 진료원장</li>
+              <li className={styles['doc__career--list']}>동의대학교 한의과대학 졸업</li>
+              <li className={styles['doc__career--list']}>척추신경추나의학회 정회원</li>
               <li className={styles['doc__career--list']}>한방비만학회 회원</li>
-              <li className={styles['doc__career--list']}>대한한방신경정신과학회 회원</li>
-              <li className={styles['doc__career--list']}>대한스포츠한의학회 회원</li>
+              <li className={styles['doc__career--list']}>대한한의학회 회원</li>
             </ul>
           </div>
           <div className={styles.doc__img}>
-            <img src={Yeji} alt="doc" />
+            <img style={{ height: '90%' }} src={HeeWon} alt="doc" />
           </div>
           <div className={styles.doc__name}>
-            <span className={styles['doc__name--name']}>방예지</span>
+            <span className={styles['doc__name--name']}>최희원</span>
             진료원장
           </div>
         </div>

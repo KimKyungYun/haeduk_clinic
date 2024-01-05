@@ -8,7 +8,6 @@
 
 body,
 html {
-  /* https://css-tricks.com/snippets/css/system-font-stack/ */
   font-family:
     SUIT,
     system-ui,
@@ -24,27 +23,6 @@ html {
 
 }
 
-// body::after {
-//   position:absolute;
-//   width:0;
-//   height:0;
-//   overflow:hidden;
-//   z-index:-1;
-
-//   content: url('./assets/image/main.jpg') 
-//   url('./assets/image/main2.jpg')
-//   url('./assets/image/logo_row_gold.png')
-//   url('./assets/image/logo_row_gold_white.png')
-//   url('./assets/image/slider/slide.png')
-//   url('./assets/image/slider/slide2.png')
-//   url('./assets/image/slider/slide3.png')
-//   url('./assets/image/slider/slide4.JPG')
-//   url('./assets/image/slider/slide5.JPG')
-//   url('./assets/image/slider/slide7.JPG')
-//   url('./assets/image/doctor/dahi.png') 
-//   url('./assets/image/doctor/hyein.png')   
-//   url('./assets/image/doctor/yeji.png');
-// }
 button {
   font-family: SUIT, system-ui;
 }
