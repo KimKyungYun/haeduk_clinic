@@ -4,7 +4,7 @@ import P3 from 'assets/image/main.jpg';
 import P4 from 'assets/image/main2.jpg';
 import P5 from 'assets/image/parking.png';
 import P6 from 'assets/image/treat.png';
-import P7 from 'assets/image/doctor/dahi.png';
+import P7 from 'assets/image/doctor/youngha.png';
 import P8 from 'assets/image/doctor/hyein.png';
 import P9 from 'assets/image/doctor/heewon.png';
 import P10 from 'assets/image/treatment/car.png';
